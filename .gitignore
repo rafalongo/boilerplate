@@ -1,0 +1,10 @@
+.DS_Store
+node_modules
+*bower_components
+npm_debug
+npm-debug*
+*dist
+*public
+*stage
+*build
+__*

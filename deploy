@@ -1,0 +1,3 @@
+echo "Fazendo deploy ..."
+echo "Senha: abcdefgh"
+rsync --filter '- .git' -av --log-file=deploy.log __stage/ devdigital@digitalbox.cc:/home/devdigital/path.to.project
