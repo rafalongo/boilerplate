@@ -1,0 +1,7 @@
+<nav>
+	<ul>
+		<li class="{% if slug == 'pagina-inicial' %}active{% endif %}"><a href="{{ baseurl }}pagina-inicial/">Página Inicial</a></li>
+		<li class="{% if slug == 'servicos' %}active{% endif %}"><a href="{{ baseurl }}servicos/">Serviços</a></li>
+		<li class="{% if slug == 'contato' %}active{% endif %}"><a href="{{ baseurl }}contato/">Contato</a></li>
+	</ul>
+</nav>

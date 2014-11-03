@@ -9,10 +9,7 @@ nunjucksRender.nunjucks.configure([srcPath]);
 
 gulp.task('htmls', function(){
 
-  gulp.src([
-      srcPath + '/**/*.html',
-      '!' + srcPath + '/nunj/**',
-      ])
+  gulp.src([srcPath + '/pages/**/*.html', '!' + srcPath + '/nunj/**',])
       .pipe(nunjucksRender())
       .pipe(prettify({
         'indent_char': ' ',

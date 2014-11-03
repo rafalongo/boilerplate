@@ -1,0 +1,16 @@
+{% extends "./nunj/layouts/master.nunj" %}
+{% set slug = "pagina-inicial" %}
+{% set title = "Página Inicial" %}
+
+{% block content %}
+	<hgroup>
+		<h1>{{ title }}</h1>
+		<p>Frontend Boilerplate</p>
+	</hgroup>
+{% endblock %}
+
+{% block scripts %}
+	<script>
+		app.components.list( '{{ slug }}', '{{ title }}' );
+	</script>
+{% endblock %}

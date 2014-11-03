@@ -1,2 +1,10 @@
-// Code is Art.
-// Leia sobre CommonJS antes de meter o dedo aqui.
+var app = {
+  // query: require('./lib/location-to-query'),
+  // render: require('./lib/render'),
+  // models: require('./models'),
+  // menu: require('./menu'),
+  // form: require('./lib/form'),
+  components: require('./components'),
+};
+
+window.app = app;
